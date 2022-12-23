@@ -19,7 +19,7 @@ export interface TextInputComponentProps {
     e: NativeSyntheticEvent<TextInputSubmitEditingEventData>,
   ) => void;
   placeholderInput?: string;
-  onPressButton: () => void;
+  onPressButton?: () => void;
 }
 
 export interface TextAreaProps {

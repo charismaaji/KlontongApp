@@ -93,6 +93,7 @@ const HomeScreen = () => {
               />
             </View>
             <FlatList
+              keyExtractor={(item, index) => index.toString()}
               showsVerticalScrollIndicator={false}
               data={listProduct}
               contentContainerStyle={styles.flatList}
@@ -102,6 +103,7 @@ const HomeScreen = () => {
               renderItem={({item}) => {
                 return (
                   <CardProductComponent
+                    key={item.id}
                     price={item.price}
                     title={item.productName}
                     source={{uri: item.image}}
