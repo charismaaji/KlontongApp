@@ -12,12 +12,6 @@ export interface ProductDataProps {
   price: number;
 }
 
-export interface ProductDetailProps {
+export interface ProductDetailProps extends ProductDataProps {
   id: number;
-  image: string;
-  productName: string;
-  categoryId: number;
-  categoryName: string;
-  description: string;
-  price: number;
 }
